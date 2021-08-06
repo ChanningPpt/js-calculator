@@ -1,43 +1,48 @@
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="pretty.css">
-        <title>JS Calculator</title>
-    </head>
-    <body>
-        <div class="Calculator">
-    
-            <input type="text" class="display" disabled>
-    
-        <div class="keys">
-            <div class="row">
-                <button value="7">7</button>
-                <button value="8">8</button>
-                <button value="9">9</button>
-                <button value="+" class="operator">+</button>
-            </div>
-            <div class="row">
-                <button value="4">4</button>
-                <button value="5">5</button>
-                <button value="6">6</button>
-                <button value="-" class="operator">-</button>
-            </div>
-            <div class="row">
-                <button value="1">1</button>
-                <button value="2">2</button>
-                <button value="3">3</button>
-                <button value="*" class="operator">*</button>
-            </div>
-            <div class="row">
-                <button value="C" class="operator">C</button>
-                <button value="0">0</button>
-                <button value="/" class="operator">/</button>
-                <button value="=" class="operator">=</button>
-            </div>
-        </div>
-    
-            <script src="math.js"></script>
-    
-        </div>
-    </body>    
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <table class="container" border="0">
+            <tr class="row">
+                <td><input type="text" class="display" disabled></td>
+            </tr>
+            <tr class="row">
+                <td class="number"><button value="7">7</button></td>
+                <td class="number"><button value="8">8</button></td>
+                <td class="number"><button value="9">9</button></td>
+                <td class="operator"><button value="/" class="operator">/</butto n></td>
+            </tr>
+            <tr class="row">
+                <td class="number"><button value="4">4</button></td>
+                <td class="number"><button value="5">5</button></td>
+                <td class="number"><button value="6">6</button></td>
+                <td class="operator"><button value="*" class="operator">*</button></td>
+            </tr>
+            <tr class="row">
+                <td class="number"><button value="1">1</button></td>
+                <td class="number"><button value="2">2</button></td>
+                <td class="number"><button value="3">3</button></td>
+                <td class="operator"><button value="+" class="operator">+</button></td>
+            </tr>
+            <tr class="row">
+                <td class="number"><button value="0">0</button></td>
+                <td class="decimal"><button value=".">.</button></td>
+                <td class="clear"><button value="C" class="clear">C</button></td>
+                <td class="operator"><button value="-" class="operator">-</button></td>
+            </tr>
+            <tr class="row">
+                <td class="result"><button value="=" class="result">=</button></td>
+            </tr>
+        </table>
+    </div>
 
+    <script src="app.js"></script>
+</body>
+</html>
